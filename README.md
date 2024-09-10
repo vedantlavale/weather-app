@@ -1,7 +1,7 @@
 ### [Live Demo](https://vedantlavale.github.io/weather-app)
 # Weather App
 #### 📝 Description
-Weather app that uses the OpenWeatherMap API. A JavaScript project made for the fun.
+Weather app that uses the VisualCrossing API. A JavaScript project made for the fun.
 
 #### 💡 Features
 * Search cities will appear as cards
