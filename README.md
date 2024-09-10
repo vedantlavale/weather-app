@@ -1,2 +1,3 @@
 # weather-app
-A simple weather app made using HTML,Tailwind CSS,Vannilla JS,VisualAPI
+📝 Description
+Weather app that uses the VIsualCross API. A JavaScript project just for the fun
