@@ -61,9 +61,3 @@ button.addEventListener('click',function(event){
         })
 })
 
-city.addEventListener('input', function() {
-    if (city.value === "") {
-        weatherInfo.classList.add('hidden');
-        errorinfo.classList.add('hidden');
-    }
-});
