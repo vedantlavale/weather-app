@@ -11,16 +11,15 @@ const errordata = document.querySelector("#errordata")
 
 
 function processWeatherData(data) {
-    // Extract relevant data from the API response
     const weatherInfo2 = {
-        city: data.address, // City name
-        latitude: data.latitude, // Latitude
-        longitude: data.longitude, // Longitude
-        currentTemperature: data.currentConditions.temp, // Current temperature
-        description: data.description, // Weather description
-        conditions: data.currentConditions.conditions, // Additional condition information
-        time: data.currentConditions.datetime, // Time of data
-        timezone: data.timezone // Timezone
+        city: data.address, 
+        latitude: data.latitude, 
+        longitude: data.longitude,
+        currentTemperature: data.currentConditions.temp, 
+        description: data.description, 
+        conditions: data.currentConditions.conditions, 
+        time: data.currentConditions.datetime, 
+        timezone: data.timezone 
     };
     return weatherInfo2;
 }
