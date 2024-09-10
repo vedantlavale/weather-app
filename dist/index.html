@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body class="font-sans bg-[#A9CEF4]">
+
+    <div class="flex items-center justify-center h-screen">
+        <div class="w-full max-w-md p-8 bg-[#7EA0B7] rounded-lg shadow-lg">
+            <h1 class="mb-4 text-2xl font-bold text-center">Weather App</h1>
+
+            <!-- Form to get location input -->
+            <form id="weatherForm" class="mb-4">
+                <input type="text" id="city" name="location" placeholder="Enter your location"
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300">
+                <button type="submit" class="w-full px-4 py-2 mt-4 text-white bg-blue-500 rounded-lg hover:bg-blue-600">
+                    Get Weather
+                </button>
+            </form>
+
+            <!-- Loading Spinner -->
+            <div id="loading" class="hidden text-center">
+                <div class="w-8 h-8 mx-auto border-t-2 border-b-2 border-blue-500 rounded-full animate-spin"></div>
+                <p class="mt-2">Loading...</p>
+            </div>
+
+            <!-- Weather Information -->
+            <div id="weatherInfo" class="hidden p-4 rounded-lg bg-[#C8E1F9]">
+                <p id="locationName" class="text-lg font-semibold"></p>
+                <p id="temperature" class="text-2xl"></p>
+                <p id="description" class="text-gray-700"></p>
+            </div>
+            
+            <div id="errorinfo" class="hidden p-4 rounded-lg bg-[#A9CEF4]"> 
+                <p id="errordata"class="text-2xl"></p>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
